@@ -4,7 +4,8 @@ import bg from 'img/abstract-grunge-decorative-relief-navy-blue-stucco-wall-text
 export const Wrapper = styled.div`
   display: flex;
   justify-content: center;
-  background-image: url('${bg}');
+  background-image: linear-gradient(${p => p.theme.colors.homeBg}, ${p => p.theme.colors.homeBg}),
+    url('${bg}');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
