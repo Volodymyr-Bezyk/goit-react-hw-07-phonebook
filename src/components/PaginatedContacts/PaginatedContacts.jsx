@@ -39,9 +39,7 @@ const PaginatedContacts = () => {
       {!error && currentItems.length > 0 && (
         <Box as="ul" display="flex" flexDirection="column-reverse">
           {currentItems.map(contact => (
-            <Contact key={contact.id}>
-              <ContactListRow contact={contact} />
-            </Contact>
+            <Contact key={contact.id}>{<ContactListRow contact={contact} />}</Contact>
           ))}
         </Box>
       )}

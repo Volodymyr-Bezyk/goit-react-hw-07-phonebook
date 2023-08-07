@@ -7,6 +7,7 @@ import { Info, InfoBtn } from './ContactListRow.styled';
 import { operations } from 'redux/index';
 
 const ContactListRow = ({ contact }) => {
+  console.log('contact', contact);
   const { name, number, email, id, status } = contact;
   const dispatch = useDispatch();
   const onDeleteClick = () => dispatch(operations.deleteContact(id));
